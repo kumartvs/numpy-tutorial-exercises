@@ -5,6 +5,7 @@ import os, re
 def test_output():
     f = open('app.py')
     content = f.read()
+    print
     assert content.find("arange(") > 0
 
 @pytest.mark.it('The output should be a vector with all the integers from 10 to 49')
